@@ -5,7 +5,7 @@ import 'react-tabs/style/react-tabs.css';
 import './App.css';
 import {Tabs, TabList, Tab, TabPanel} from "react-tabs";
 
-import {WORD_DATA} from "./data/data";
+import {LETTER_DATA, WORD_DATA} from "./data/data";
 import {WordsPage} from "./pages/WordsPage";
 import {GamePage} from "./pages/GamePage";
 
@@ -20,7 +20,7 @@ function App() {
                 <WordsPage words={WORD_DATA}/>
             </TabPanel>
             <TabPanel>
-                <GamePage words={WORD_DATA}/>
+                <GamePage words={WORD_DATA} letters={LETTER_DATA}/>
             </TabPanel>
         </Tabs>
     );
