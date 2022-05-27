@@ -1,0 +1,15 @@
+export const WORD_DATA = [
+    {id: 1, description: "Bloem", level: 1, hint: "Een madeliefje is een ....."},
+    {id: 2, description: "Boos", level: 1, hint: "Niet blij, maar ...."},
+    {id: 3, description: "Muis", level: 1, hint: "Men zegt ook wel: kat en .... spelen"},
+    {id: 4, description: "Jas", level: 1, hint: "In de winter moet je een ... aandoen"},
+    {id: 5, description: "Zeep", level: 1, hint: "Je gebruikt het om je te wassen"},
+    {id: 6, description: "Moeilijk", level: 2, hint: "Het is niet ........, het is gemakkelijk"},
+    {id: 7, description: "Wasmand", level: 2, hint: "Je doet er je vuile kleren in"},
+    {id: 8, description: "Tanden", level: 2, hint: "Het is belangrijk dat je ze poetst voor het slapengaan"},
+    {id: 9, description: "Bliksem", level: 2, hint: "Donder"},
+    {id: 10, description: "Geschiedenis", level: 3, hint: "Wat vroeger was"},
+    {id: 11, description: "Programmeren", level: 3, hint: "Coderen"},
+    {id: 12, description: "Onmiddelijk", level: 3, hint: "En wel nu"},
+    {id: 13, description: "Boterhammen", level: 3, hint: "Middagmaal"},
+];
