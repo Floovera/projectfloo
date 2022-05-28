@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.figure-container {
+  fill: transparent;
+  stroke: #5c4cc0;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
 .word {
   display: flex;
   position: absolute;
