@@ -8,6 +8,7 @@ import {Notification} from "../components/Notification";
 import {show} from "../helpers/helper";
 import {Hint} from "../components/Hint";
 import {Header} from "../components/Header";
+import {Footer} from "../components/Footer";
 
 export function GamePage(props) {
     const {letters,selectedWord} = props;
@@ -69,6 +70,7 @@ export function GamePage(props) {
                 <Hint
                     selectedWord={selectedWord}
                 />
+                <Footer></Footer>
         </div>
 
     );
