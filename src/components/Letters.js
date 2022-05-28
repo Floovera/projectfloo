@@ -7,7 +7,7 @@ function Letter(props) {
     const {letter} = props;
     return (
         <Col xs={6} sm={4} md={3} lg={2}>
-            <MyCard title={letter.description}>
+            <MyCard onClick={() => console.log(letter.description)} title={letter.description}>
             </MyCard>
         </Col>
     );
