@@ -1,6 +1,7 @@
 import {Letters} from "../components/Letters";
 import {WrongLetters} from "../components/WrongLetters";
 import {useState} from "react";
+import {SecretWord} from "../components/SecretWord";
 
 export function GamePage(props) {
     const {letters,selectedWord} = props;
@@ -36,6 +37,11 @@ export function GamePage(props) {
             <WrongLetters
                 wrongLetters={wrongLetters}
                 title="Foute gokjes"
+            />
+            <SecretWord
+                selectedWord={selectedWord}
+                correctLetters={correctLetters}
+                title="Raad je het woord?"
             />
 
         </div>
