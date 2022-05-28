@@ -6,6 +6,7 @@ import {Figure} from "../components/Figure";
 import {Popup} from "../components/Popup";
 import {Notification} from "../components/Notification";
 import {show} from "../helpers/helper";
+import {Hint} from "../components/Hint";
 
 export function GamePage(props) {
     const {letters,selectedWord} = props;
@@ -46,10 +47,6 @@ export function GamePage(props) {
                     title="Alfabet"
                     onClickLetter={l => checkLetter(l.description)}
                 />
-                <WrongLetters
-                    wrongLetters={wrongLetters}
-                    title="Foute gokjes"
-                />
                 <SecretWord
                     selectedWord={selectedWord}
                     correctLetters={correctLetters}
@@ -59,9 +56,16 @@ export function GamePage(props) {
                     wrongLetters={wrongLetters}
                     title="Opgepast!"
                 />
+                <WrongLetters
+                    wrongLetters={wrongLetters}
+                    title="Foute gokjes"
+                />
                 <Popup
                     correctLetters={correctLetters}
                     wrongLetters={wrongLetters}
+                    selectedWord={selectedWord}
+                />
+                <Hint
                     selectedWord={selectedWord}
                 />
             </div>

@@ -8,7 +8,6 @@ export function SecretWord(props) {
     return (
         <Section title={title} className="word">
             {selectedWord.description.split('').map((letter,i) => {
-
                 return(
                     <Col className="letter" key={i}>
                      {correctLetters.includes(letter) ? letter : ''}
