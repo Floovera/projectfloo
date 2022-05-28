@@ -1,5 +1,5 @@
-import {Words} from "../components/Words";
 import {Letters} from "../components/Letters";
+import {WrongLetters} from "../components/WrongLetters";
 import {useState} from "react";
 
 export function GamePage(props) {
@@ -33,6 +33,11 @@ export function GamePage(props) {
                 title="Alfabet"
                 onClickLetter={l => checkLetter(l.description)}
             />
+            <WrongLetters
+                wrongLetters={wrongLetters}
+                title="Foute gokjes"
+            />
+
         </div>
     );
 }
