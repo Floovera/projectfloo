@@ -15,12 +15,16 @@ export function Popup(props) {
         finalMessageRevealWord = `Het woord was: ${selectedWordDescription}`;
     }
 
+    function refreshPage(){
+        window.location.reload();
+    }
 
     return (
         <div className="popup-container" style={finalMessage !== '' ? {display: 'flex'} : {}}>
             <div className="popup">
                 <h2 >{finalMessage}</h2>
                 <h3 >{finalMessageRevealWord}</h3>
+                <button onClick={refreshPage}>Speel opnieuw</button>
             </div>
         </div>
     )

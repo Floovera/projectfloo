@@ -9,6 +9,9 @@ import {LETTER_DATA, WORD_DATA} from "./data/data";
 import {WordsPage} from "./pages/WordsPage";
 import {GamePage} from "./pages/GamePage";
 
+let selectedWord = WORD_DATA[Math.floor(Math.random() * WORD_DATA.length)];
+
+
 function App() {
     return (
         <Tabs>
@@ -20,7 +23,7 @@ function App() {
                 <WordsPage words={WORD_DATA}/>
             </TabPanel>
             <TabPanel>
-                <GamePage letters={LETTER_DATA} selectedWord={WORD_DATA[Math.floor(Math.random() * WORD_DATA.length)]}/>
+                <GamePage letters={LETTER_DATA} selectedWord={selectedWord}/>
             </TabPanel>
         </Tabs>
     );
