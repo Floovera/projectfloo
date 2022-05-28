@@ -3,6 +3,7 @@ import {WrongLetters} from "../components/WrongLetters";
 import {useState} from "react";
 import {SecretWord} from "../components/SecretWord";
 import {Figure} from "../components/Figure";
+import {Popup} from "../components/Popup";
 
 export function GamePage(props) {
     const {letters,selectedWord} = props;
@@ -48,7 +49,13 @@ export function GamePage(props) {
                 wrongLetters={wrongLetters}
                 title="Opgepast!"
             />
+            <Popup
+                correctLetters={correctLetters}
+                wrongLetters={wrongLetters}
+                selectedWord={selectedWord}
+            />
 
         </div>
+
     );
 }
