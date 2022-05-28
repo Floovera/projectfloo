@@ -11,3 +11,12 @@ export function checkWin(correct,wrong,word){
 
     return status;
 }
+
+// zet setShowNotification eerst op true, om hem dan na zoveel seconde op false te zetten
+
+export function show(setter){
+    setter(true);
+    setTimeout(() => {
+        setter(false)
+    },1000)
+}
