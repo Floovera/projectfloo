@@ -20,13 +20,13 @@ Letter.propTypes = {
 }
 
 export function Letters(props) {
-    const {letters, title} = props;
+    const {letters, title,onClickLetter} = props;
     return (
         <Section title={title}>
             {letters.map(l => <Letter
                 key={l.id}
                 letter={l}
-                onClick={() => console.log(l.description)}
+                onClick={() => onClickLetter(l)}
 
             />)}
         </Section>

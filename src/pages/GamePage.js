@@ -7,9 +7,18 @@ export function GamePage(props) {
     const[correctLetters,setCorrectLetters] = useState([]);
     const[wrongLetters,setWrongLetters] = useState([]);
 
+    function checkLetter(l) {
+
+    }
+
     return (
         <div className="mx-3">
-            <Letters letters={letters} title="Alfabet"/>
+            <Letters
+                letters={letters}
+                title="Alfabet"
+                onClickLetter={l => console.log(l.description)}
+                onSelectNumber
+            />
         </div>
     );
 }
