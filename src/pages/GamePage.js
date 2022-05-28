@@ -7,6 +7,7 @@ import {Popup} from "../components/Popup";
 import {Notification} from "../components/Notification";
 import {show} from "../helpers/helper";
 import {Hint} from "../components/Hint";
+import {Header} from "../components/Header";
 
 export function GamePage(props) {
     const {letters,selectedWord} = props;
@@ -38,10 +39,10 @@ export function GamePage(props) {
 
     return (
         <div className="mx-3">
+            <Header></Header>
             <Notification
                 showNotification={showNotification}
             />
-            <div>
                 <Letters
                     letters={letters}
                     title="Alfabet"
@@ -68,9 +69,6 @@ export function GamePage(props) {
                 <Hint
                     selectedWord={selectedWord}
                 />
-            </div>
-
-
         </div>
 
     );
