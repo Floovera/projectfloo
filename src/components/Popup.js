@@ -1,5 +1,4 @@
 import {checkWin} from "../helpers/helper";
-import {useEffect} from "react";
 
 export function Popup(props) {
 

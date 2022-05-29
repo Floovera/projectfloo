@@ -8,7 +8,7 @@ export function WrongLetters(props) {
     let wrongLettersForLetter = [];
 
     wrongLettersForLetter = wrongLetters.map((str,index) => ({id: index + 1, description: str}));
-    if (wrongLetters.length < 1 || wrongLetters == undefined) return;
+    if (wrongLetters.length < 1) return;
     return (
 
         <Section title={title}>
