@@ -1,6 +1,6 @@
 export function Footer() {
     return (
-        <div className="footer">
+        <div>
             <p>Opracht Dynamische webapps - Floo Veraghtert.</p>
         </div>
     )

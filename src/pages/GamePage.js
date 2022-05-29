@@ -41,35 +41,45 @@ export function GamePage(props) {
     return (
         <div className="mx-3">
             <Header></Header>
-            <Notification
-                showNotification={showNotification}
+            <SecretWord
+                selectedWord={selectedWord}
+                correctLetters={correctLetters}
+                title="Raad je het woord?"
             />
-                <Letters
-                    letters={letters}
-                    title="Alfabet"
-                    onClickLetter={l => checkLetter(l.description)}
-                />
-                <SecretWord
-                    selectedWord={selectedWord}
-                    correctLetters={correctLetters}
-                    title="Raad je het woord?"
-                />
-                <Figure
-                    wrongLetters={wrongLetters}
-                    title="Opgepast!"
-                />
-                <WrongLetters
-                    wrongLetters={wrongLetters}
-                    title="Foute gokjes"
-                />
+            <div className="d-flex flex-row ">
+                <div className="p-1 col-md-6">
+                    <Figure
+                        wrongLetters={wrongLetters}
+                        title="Opgepast!"
+                    />
+                </div>
+
+                <div className="p-1 col-md-6 d-flex flex-column">
+
+                    <Notification
+                        showNotification={showNotification}
+                    />
+                    <Letters
+                        style={{backgroundColor: "yellow"}}
+                        letters={letters}
+                        title="Alfabet"
+                        onClickLetter={l => checkLetter(l.description)}
+                    />
+                    <WrongLetters
+                        wrongLetters={wrongLetters}
+                        title="Foute gokjes"
+                    />
+                    <Hint
+                        selectedWord={selectedWord}
+                    />
+                </div>
+            </div>
                 <Popup
                     correctLetters={correctLetters}
                     wrongLetters={wrongLetters}
                     selectedWord={selectedWord}
                 />
-                <Hint
-                    selectedWord={selectedWord}
-                />
+
                 <Footer></Footer>
         </div>
 
